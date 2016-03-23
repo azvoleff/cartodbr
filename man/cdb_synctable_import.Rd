@@ -7,7 +7,7 @@
 cdb_synctable_import(data_url, user, api_key, sync_interval = 604800, ...)
 }
 \value{
-Response from POST request
+response from POST request
 }
 \description{
 Import file into CartoDB as a synced table

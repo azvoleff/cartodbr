@@ -21,21 +21,21 @@ build_cdb_query <- function(query='', api_key='') {
 #' @importFrom httr GET
 cdb_api_get <- function(user, endpoint, domain='cartodb.com', 
                         query=list(), version='v1', protocol='https', 
-                        subdomain=TRUE) {
+                        subdomain=TRUE, ...) {
     stopifnot(protocol %in% c('https', 'http'))
     GET(build_cdb_url(user, endpoint, domain, version, protocol, subdomain), 
-        query=query)
+        query=query, ...)
 }
 
 #' Make a PUT call to the CartoDB map API
 #'
 #' @importFrom httr PUT
-cdb_api_put <- function(user, endpoint, body, domain='cartodb.com', 
+cdb_api_put <- function(user, endpoint, domain='cartodb.com', 
                         api_key='', version='v1', protocol='https', 
-                        subdomain=TRUE, encode='json') {
+                        subdomain=TRUE, encode='json', ...) {
     stopifnot(protocol %in% c('https', 'http'))
     PUT(build_cdb_url(user, endpoint, domain, version, protocol, subdomain), 
-        body=body, encode=encode, query=build_cdb_query(api_key=api_key))
+        body=body, encode=encode, query=build_cdb_query(api_key=api_key), ...)
 }
 
 #' Make a POST call to the CartoDB map API
@@ -52,10 +52,10 @@ cdb_api_post <- function(user, endpoint, body, domain='cartodb.com',
 #' Make a POST call to the CartoDB map API
 #'
 #' @importFrom httr DELETE
-cdb_api_delete <- function(user, endpoint, body, domain='cartodb.com', 
+cdb_api_delete <- function(user, endpoint, domain='cartodb.com', 
                            api_key='', version='v1', protocol='https', 
-                           subdomain=TRUE, encode='json') {
+                           subdomain=TRUE, encode='json', ...) {
     stopifnot(protocol %in% c('https', 'http'))
     DELETE(build_cdb_url(user, endpoint, domain, version, protocol, subdomain), 
-           query=list(api_key=api_key))
+           query=list(api_key=api_key), ...)
 }

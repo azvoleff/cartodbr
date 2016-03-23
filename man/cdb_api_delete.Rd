@@ -4,8 +4,9 @@
 \alias{cdb_api_delete}
 \title{Make a POST call to the CartoDB map API}
 \usage{
-cdb_api_delete(user, endpoint, body, domain = "cartodb.com", api_key = "",
-  version = "v1", protocol = "https", subdomain = TRUE, encode = "json")
+cdb_api_delete(user, endpoint, domain = "cartodb.com", api_key = "",
+  version = "v1", protocol = "https", subdomain = TRUE, encode = "json",
+  ...)
 }
 \description{
 Make a POST call to the CartoDB map API

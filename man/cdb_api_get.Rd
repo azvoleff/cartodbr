@@ -5,7 +5,7 @@
 \title{Make a HTTP GET call to the CartoDB map API}
 \usage{
 cdb_api_get(user, endpoint, domain = "cartodb.com", query = list(),
-  version = "v1", protocol = "https", subdomain = TRUE)
+  version = "v1", protocol = "https", subdomain = TRUE, ...)
 }
 \description{
 Make a HTTP GET call to the CartoDB map API
