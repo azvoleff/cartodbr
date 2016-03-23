@@ -73,7 +73,9 @@ cdb_synctable_getid <- function(table, user, api_key, ...) {
 #' @importFrom jsonlite fromJSON
 #' @return Response from POST request
 cdb_delete <- function(table, user, api_key, ...) {
-    # Try to convert it to a regular table in case it is a sync table
-    cdb_synctable_convert(table=table, user, api_key, ...)
-    cdb_sql_call(user=user, query=paste("DROP TABLE", table), api_key=api_key, ...)
+    if(cdb_synctable_check(table=table, user=user, api_key=api_key, ...)) {
+        cdb_synctable_convert(table=table, user=user, api_key=api_key, ...)
+    }
+    cdb_sql_call(user=user, query=paste("DROP TABLE", table),
+                 api_key=api_key, ...)
 }
