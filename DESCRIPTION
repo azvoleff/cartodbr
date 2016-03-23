@@ -1,0 +1,12 @@
+Package: cartodbr
+Title: Interact With CartoDB Server From R
+Version: 0.1
+Authors@R: person("Alex", "Zvoleff", email="azvoleff@conservation.org",
+    role=c("aut", "cre"))
+Description: A set of functions for interacting with a CartoDB server from R.
+    The server can be cartodb.com, or can be self-hosted.
+Depends:
+    R (>= 3.0)
+License: GPL (>= 3)
+LazyData: true
+RoxygenNote: 5.0.1
