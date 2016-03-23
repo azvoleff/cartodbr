@@ -4,9 +4,9 @@
 \alias{cdb_api_post}
 \title{Make a POST call to the CartoDB map API}
 \usage{
-cdb_api_post(user, endpoint, body, domain = "cartodb.com", api_key = "",
-  query = "", version = "v1", protocol = "https", subdomain = TRUE,
-  encode = "json", ...)
+cdb_api_post(user, endpoint, body, domain = "cartodb.com", query = list(),
+  version = "v1", protocol = "https", subdomain = TRUE, encode = "json",
+  ...)
 }
 \description{
 Make a POST call to the CartoDB map API

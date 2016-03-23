@@ -4,7 +4,7 @@
 \alias{cdb_synctable_convert}
 \title{Convert sync table to regular table (remove sync)}
 \usage{
-cdb_synctable_convert(import_id, user, api_key, ...)
+cdb_synctable_convert(table, user, api_key, ...)
 }
 \value{
 Response from POST request

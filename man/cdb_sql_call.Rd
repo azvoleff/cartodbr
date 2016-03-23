@@ -2,7 +2,7 @@
 % Please edit documentation in R/cdb_sql.R
 \name{cdb_sql_call}
 \alias{cdb_sql_call}
-\title{Drop a table from CartoDB}
+\title{Make a SQL API call}
 \usage{
 cdb_sql_call(user, query, api_key, ...)
 }
@@ -10,6 +10,6 @@ cdb_sql_call(user, query, api_key, ...)
 Response from POST request
 }
 \description{
-Drop a table from CartoDB
+Make a SQL API call
 }
 
