@@ -4,5 +4,5 @@ Interact with CartoDB server from R. Supports data import, sync tables, SQL quer
 # Installing
 
 ```R
-devtools::install_github('azvoleff/teamlucc')
+devtools::install_github('azvoleff/cartodbr')
 ```
