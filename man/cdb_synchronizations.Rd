@@ -7,7 +7,7 @@
 cdb_synchronizations(user, api_key, ...)
 }
 \value{
-Response from POST request
+Response from GET request
 }
 \description{
 List sync tables for a given CartoDB account

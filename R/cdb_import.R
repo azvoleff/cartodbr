@@ -40,6 +40,7 @@ cdb_synctable_status <- function(table, user, api_key, ...) {
                 endpoint=paste0('synchronizations/', import_id, '/sync_now'),
                 query=list(api_key=api_key), ...)
 }
+
 #' Force sync table to sync
 #'
 #' @export
@@ -54,7 +55,7 @@ cdb_synctable_force <- function(table, user, api_key, ...) {
 #' Convert sync table to regular table (remove sync)
 #'
 #' @export
-#' @return Response from POST request
+#' @return Response from DELETE request
 cdb_synctable_convert <- function(table, user, api_key, ...) {
     import_id <- cdb_synctable_getid(table, user, api_key, ...)
     cdb_api_delete(user=user, endpoint=paste0('synchronizations/', import_id), 
@@ -64,7 +65,7 @@ cdb_synctable_convert <- function(table, user, api_key, ...) {
 #' List sync tables for a given CartoDB account
 #'
 #' @export
-#' @return Response from POST request
+#' @return Response from GET request
 cdb_synchronizations <- function(user, api_key, ...) {
     cdb_api_get(user, 'synchronizations', query=list(api_key=api_key), ...)
 }

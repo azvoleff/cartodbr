@@ -7,7 +7,7 @@
 cdb_synctable_convert(table, user, api_key, ...)
 }
 \value{
-Response from POST request
+Response from DELETE request
 }
 \description{
 Convert sync table to regular table (remove sync)
