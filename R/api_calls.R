@@ -41,12 +41,12 @@ cdb_api_put <- function(user, endpoint, domain='cartodb.com',
 #' Make a POST call to the CartoDB map API
 #'
 #' @importFrom httr POST
-cdb_api_post <- function(user, endpoint, body, domain='cartodb.com', 
-                         query=list(), version='v1', protocol='https', 
+cdb_api_post <- function(user, endpoint, body=NULL, domain='cartodb.com', 
+                         query=NULL, version='v1', protocol='https', 
                          subdomain=TRUE, encode='json', ...) {
     stopifnot(protocol %in% c('https', 'http'))
     POST(build_cdb_url(user, endpoint, domain, version, protocol, subdomain), 
-         body=body, encode=encode, query=query, ...)
+         body=body, query=query, encode=encode, ...)
 }
 
 #' Make a POST call to the CartoDB map API
