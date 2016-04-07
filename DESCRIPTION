@@ -1,4 +1,4 @@
-Package: cartodbr
+Package: cdbr
 Title: Interact With CartoDB Server From R
 Version: 0.1
 Authors@R: person("Alex", "Zvoleff", email="azvoleff@conservation.org",
