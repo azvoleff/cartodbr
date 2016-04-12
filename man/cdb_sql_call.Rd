@@ -4,7 +4,7 @@
 \alias{cdb_sql_call}
 \title{Make a SQL API call}
 \usage{
-cdb_sql_call(user, query, api_key, ...)
+cdb_sql_call(query, api_key, ...)
 }
 \value{
 Response from POST request
