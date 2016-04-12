@@ -61,7 +61,7 @@ cdb_api_put <- function(endpoint, version='v1', encode='json', ...) {
 cdb_api_post <- function(endpoint, version='v1', body=NULL, query=NULL,
                          encode='json', ...) {
     POST(build_cdb_url(endpoint, version), body=body, query=query, 
-         encode=encode)
+         encode=encode, ...)
 }
 
 #' Make a POST call to the CartoDB map API

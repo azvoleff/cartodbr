@@ -6,7 +6,7 @@
 #' @return Response from POST request
 cdb_import_file <- function(path, privacy='private', ...) {
     stopifnot(file_test('-f', path))
-    r <- cdb_api_post(endpoint='imports', body=upload_file(path), 
+    r <- cdb_api_post(endpoint='imports/', body=upload_file(path), 
                       query=list(api_key=get_api_key()), ...)
     if (status_code(r) != 200) stop('problem instantiating named map:\n',  r)
     fromJSON(content(r, as="text"))$id
@@ -77,7 +77,7 @@ cdb_synctable_convert <- function(table) {
 #' @importFrom jsonlite fromJSON
 #' @return Response from GET request
 cdb_synchronizations <- function(...) {
-    r <- cdb_api_get('synchronizations',\
+    r <- cdb_api_get('synchronizations',
                      query=list(api_key=get_api_key()), ...)
     fromJSON(content(r, as="text"))$synchronizations
 }
