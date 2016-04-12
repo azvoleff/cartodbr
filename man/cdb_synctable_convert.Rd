@@ -4,7 +4,7 @@
 \alias{cdb_synctable_convert}
 \title{Convert sync table to regular table (remove sync)}
 \usage{
-cdb_synctable_convert(table, user, api_key, ...)
+cdb_synctable_convert(table)
 }
 \value{
 Response from DELETE request

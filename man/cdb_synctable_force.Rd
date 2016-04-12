@@ -4,7 +4,7 @@
 \alias{cdb_synctable_force}
 \title{Force sync table to sync}
 \usage{
-cdb_synctable_force(table, user, api_key, ...)
+cdb_synctable_force(table, ...)
 }
 \value{
 sync table status

@@ -4,7 +4,7 @@
 \alias{cdb_synctable_status}
 \title{Check status of sync table}
 \usage{
-cdb_synctable_status(table, user, api_key, ...)
+cdb_synctable_status(table, ...)
 }
 \value{
 sync table status

@@ -4,7 +4,7 @@
 \alias{cdb_synchronizations}
 \title{List sync tables for a given CartoDB account}
 \usage{
-cdb_synchronizations(user, api_key, ...)
+cdb_synchronizations(...)
 }
 \value{
 Response from GET request

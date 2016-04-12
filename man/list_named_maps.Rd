@@ -4,7 +4,7 @@
 \alias{list_named_maps}
 \title{List named maps for a given CartoDB account}
 \usage{
-list_named_maps(user, api_key, ...)
+list_named_maps(...)
 }
 \value{
 Response from GET request

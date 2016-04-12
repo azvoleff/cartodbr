@@ -4,7 +4,7 @@
 \alias{cdb_synctable_getid}
 \title{Get id for a sync table}
 \usage{
-cdb_synctable_getid(table, user, api_key, ...)
+cdb_synctable_getid(table, ...)
 }
 \value{
 Response from POST request

@@ -4,8 +4,7 @@
 \alias{cdb_api_get}
 \title{Make a HTTP GET call to the CartoDB map API}
 \usage{
-cdb_api_get(user, endpoint, domain = "cartodb.com", query = list(),
-  version = "v1", protocol = "https", subdomain = TRUE, ...)
+cdb_api_get(endpoint, version = "v1", query = list(), ...)
 }
 \description{
 Make a HTTP GET call to the CartoDB map API

@@ -4,7 +4,7 @@
 \alias{cdb_import_url}
 \title{Import data from URL into CartoDB}
 \usage{
-cdb_import_url(url, user, api_key, privacy = "private", ...)
+cdb_import_url(url, privacy = "private", ...)
 }
 \value{
 Response from POST request

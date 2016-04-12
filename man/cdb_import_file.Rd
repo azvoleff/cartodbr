@@ -4,7 +4,7 @@
 \alias{cdb_import_file}
 \title{Import data from local file into CartoDB}
 \usage{
-cdb_import_file(path, user, api_key, privacy = "private", ...)
+cdb_import_file(path, privacy = "private", ...)
 }
 \value{
 Response from POST request

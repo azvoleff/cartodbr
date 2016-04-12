@@ -4,7 +4,7 @@
 \alias{cdb_synctable_import}
 \title{Import file into CartoDB as a synced table}
 \usage{
-cdb_synctable_import(data_url, user, api_key, sync_interval = 604800, ...)
+cdb_synctable_import(data_url, sync_interval = 604800, ...)
 }
 \value{
 response from POST request

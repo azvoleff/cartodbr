@@ -4,7 +4,7 @@
 \alias{create_anon_map}
 \title{Instantiate an anonymous map}
 \usage{
-create_anon_map(layers, user, api_key, raster = FALSE, ...)
+create_anon_map(layers, raster = FALSE, ...)
 }
 \value{
 response from POST request

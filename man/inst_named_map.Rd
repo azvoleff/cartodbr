@@ -4,7 +4,7 @@
 \alias{inst_named_map}
 \title{Instantiate a named map}
 \usage{
-inst_named_map(name, params = list(), user, api_key, ...)
+inst_named_map(name, params = list(), ...)
 }
 \value{
 response from POST request

@@ -4,7 +4,7 @@
 \alias{create_named_map}
 \title{Create a named map}
 \usage{
-create_named_map(name, layers, user, api_key, overwrite = FALSE, ...)
+create_named_map(name, layers, overwrite = FALSE, ...)
 }
 \value{
 response from POST request

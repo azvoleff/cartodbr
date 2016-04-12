@@ -4,9 +4,7 @@
 \alias{cdb_api_put}
 \title{Make a PUT call to the CartoDB map API}
 \usage{
-cdb_api_put(user, endpoint, domain = "cartodb.com", api_key = "",
-  version = "v1", protocol = "https", subdomain = TRUE, encode = "json",
-  ...)
+cdb_api_put(endpoint, version = "v1", encode = "json", ...)
 }
 \description{
 Make a PUT call to the CartoDB map API

@@ -4,7 +4,7 @@
 \alias{delete_named_map}
 \title{Delete a named map}
 \usage{
-delete_named_map(name, user, api_key, ...)
+delete_named_map(name, ...)
 }
 \value{
 Response from DELETE request

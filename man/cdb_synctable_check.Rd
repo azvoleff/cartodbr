@@ -4,7 +4,7 @@
 \alias{cdb_synctable_check}
 \title{Check if a table is a sync table}
 \usage{
-cdb_synctable_check(table, user, api_key, ...)
+cdb_synctable_check(table, ...)
 }
 \value{
 Response from POST request

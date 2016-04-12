@@ -4,7 +4,7 @@
 \alias{cdb_delete}
 \title{Delete a CartoDB table}
 \usage{
-cdb_delete(table, user, api_key, ...)
+cdb_delete(table)
 }
 \value{
 Response from POST request
