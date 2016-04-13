@@ -1,15 +1,17 @@
 #' Import data from local file into CartoDB
 #'
 #' @export
-#' @importFrom httr status_code content
+#' @importFrom httr status_code content upload_file
 #' @importFrom jsonlite fromJSON
 #' @return Response from POST request
 cdb_import_file <- function(path, privacy='private', ...) {
     stopifnot(file_test('-f', path))
-    r <- cdb_api_post(endpoint='imports/', body=upload_file(path), 
-                      query=list(api_key=get_api_key()), ...)
-    if (status_code(r) != 200) stop('problem instantiating named map:\n',  r)
-    fromJSON(content(r, as="text"))$id
+    r <- cdb_api_post(endpoint='imports/',
+                      body=list(file=upload_file(path)), 
+                      query=list(api_key=get_api_key(), privacy=privacy),
+                      encode='multipart', ...)
+    if (status_code(r) != 200) stop('problem importing file:\n',  r)
+    fromJSON(content(r, as="text"))
 }
 
 #' Check status of import
