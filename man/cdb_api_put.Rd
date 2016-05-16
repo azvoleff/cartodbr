@@ -2,11 +2,11 @@
 % Please edit documentation in R/api_calls.R
 \name{cdb_api_put}
 \alias{cdb_api_put}
-\title{Make a PUT call to the CartoDB map API}
+\title{Send a PUT request to a CartoDB API}
 \usage{
 cdb_api_put(endpoint, version = "v1", encode = "json", ...)
 }
 \description{
-Make a PUT call to the CartoDB map API
+Send a PUT request to a CartoDB API
 }
 

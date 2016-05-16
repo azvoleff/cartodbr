@@ -40,14 +40,14 @@ get_api_key <- function() {
     }
 }
 
-#' Make a HTTP GET call to the CartoDB map API
+#' Send a GET request to a CartoDB API
 #'
 #' @importFrom httr GET
 cdb_api_get <- function(endpoint, version='v1', query=list(), ...) {
     GET(build_cdb_url(endpoint, version), query=query, ...)
 }
 
-#' Make a PUT call to the CartoDB map API
+#' Send a PUT request to a CartoDB API
 #'
 #' @importFrom httr PUT
 cdb_api_put <- function(endpoint, version='v1', encode='json', ...) {
@@ -55,7 +55,7 @@ cdb_api_put <- function(endpoint, version='v1', encode='json', ...) {
         query=list(api_key=get_api_key()), ...)
 }
 
-#' Make a POST call to the CartoDB map API
+#' Send a POST request to a CartoDB API
 #'
 #' @importFrom httr POST
 cdb_api_post <- function(endpoint, version='v1', body=NULL, query=NULL,
@@ -64,7 +64,7 @@ cdb_api_post <- function(endpoint, version='v1', body=NULL, query=NULL,
          encode=encode, ...)
 }
 
-#' Make a POST call to the CartoDB map API
+#' Send a DELETE request to a CartoDB API
 #'
 #' @importFrom httr DELETE
 cdb_api_delete <- function(endpoint, version='v1', encode='json', ...) {

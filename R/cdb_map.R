@@ -72,7 +72,7 @@ list_named_maps <- function(...) {
 #' Setup mapconfig for a raster layer
 #'
 #' @export
-#' @return response from POST request
+#' @return raster layer mapconfig
 mapconfig_raster <- function(sql, cartocss, interactivity=NA, raster_band=1, 
                              type="cartodb", cartocss_version="2.3.0") {
     layers <- data.frame(type=type)
@@ -82,6 +82,20 @@ mapconfig_raster <- function(sql, cartocss, interactivity=NA, raster_band=1,
                           geom_type='raster', 
                           geom_column="the_raster_webmercator", 
                           raster_band=raster_band)
+    layers$options <- options
+    return(layers)
+}
+
+#' Setup mapconfig for a vector layer
+#'
+#' @export
+#' @return vector layer mapconfig
+mapconfig_vector <- function(sql, cartocss, interactivity=NA, raster_band=1, 
+                             type="cartodb", cartocss_version="2.3.0") {
+    layers <- data.frame(type=type)
+    options <- data.frame(sql=sql, cartocss=cartocss, 
+                          interactivity=interactivity, 
+                          cartocss_version=cartocss_version)
     layers$options <- options
     return(layers)
 }

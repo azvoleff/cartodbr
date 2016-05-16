@@ -8,7 +8,7 @@ mapconfig_raster(sql, cartocss, interactivity = NA, raster_band = 1,
   type = "cartodb", cartocss_version = "2.3.0")
 }
 \value{
-response from POST request
+raster layer mapconfig
 }
 \description{
 Setup mapconfig for a raster layer

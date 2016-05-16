@@ -2,11 +2,11 @@
 % Please edit documentation in R/api_calls.R
 \name{cdb_api_get}
 \alias{cdb_api_get}
-\title{Make a HTTP GET call to the CartoDB map API}
+\title{Send a GET request to a CartoDB API}
 \usage{
 cdb_api_get(endpoint, version = "v1", query = list(), ...)
 }
 \description{
-Make a HTTP GET call to the CartoDB map API
+Send a GET request to a CartoDB API
 }
 

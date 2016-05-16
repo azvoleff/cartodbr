@@ -2,11 +2,11 @@
 % Please edit documentation in R/api_calls.R
 \name{cdb_api_delete}
 \alias{cdb_api_delete}
-\title{Make a POST call to the CartoDB map API}
+\title{Send a DELETE request to a CartoDB API}
 \usage{
 cdb_api_delete(endpoint, version = "v1", encode = "json", ...)
 }
 \description{
-Make a POST call to the CartoDB map API
+Send a DELETE request to a CartoDB API
 }
 

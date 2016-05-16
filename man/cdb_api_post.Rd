@@ -2,12 +2,12 @@
 % Please edit documentation in R/api_calls.R
 \name{cdb_api_post}
 \alias{cdb_api_post}
-\title{Make a POST call to the CartoDB map API}
+\title{Send a POST request to a CartoDB API}
 \usage{
 cdb_api_post(endpoint, version = "v1", body = NULL, query = NULL,
   encode = "json", ...)
 }
 \description{
-Make a POST call to the CartoDB map API
+Send a POST request to a CartoDB API
 }
 
